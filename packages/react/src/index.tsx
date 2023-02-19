@@ -1,5 +1,11 @@
-import { colors } from '@ignite-ui/tokens';
+import { styled } from './styles';
+
+const Button = styled('button', {
+  width: '$3',
+  backgroundColor: '$gray500',
+  fontSize: '$sm',
+});
 
 export function App() {
-  return <h1 style={{ color: colors.gray600 }}>Hello World</h1>;
+  return <Button>Hello World</Button>;
 }
