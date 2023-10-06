@@ -1,1 +1,1 @@
-import { colors } from '@stamblew/tokens';
+import { colors } from '@stamblew/tokens'
