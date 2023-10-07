@@ -6,9 +6,16 @@ export default {
   component: Button,
 } satisfies Meta<typeof Button>
 
-type Story = StoryObj<typeof Button>
+type ButtonStory = StoryObj<typeof Button>
 
-export const primary: Story = {
+export const primary: ButtonStory = {
+  args: {
+    primary: true,
+    size: 'big',
+  },
+}
+
+export const secondary: ButtonStory = {
   args: {
     primary: false,
   },
