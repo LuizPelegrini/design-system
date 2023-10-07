@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import '@stamblew/react/dist/index.css';
 
 const preview: Preview = {
   parameters: {
