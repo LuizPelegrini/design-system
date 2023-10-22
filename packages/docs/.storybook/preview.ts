@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import { themes } from '@storybook/theming'
 import '@stamblew/react/dist/index.css';
 
 const preview: Preview = {
@@ -10,8 +11,13 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    // sets the dark theme in component preview
     backgrounds: {
       default: 'dark'
+    },
+    // sets dark theme in pages (mdx)
+    docs: {
+      theme: themes.dark
     }
   },
 };
