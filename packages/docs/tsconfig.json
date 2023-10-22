@@ -1,4 +1,4 @@
 {
-  "extends": "@stamblew/ts-config/base.json",
-  "include": ["src"]
+  "extends": "@stamblew/ts-config/react.json",
+  "include": ["src"],
 }
