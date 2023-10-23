@@ -6,8 +6,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/**/*.ts* --format esm,cjs --dts --external react",
     "dev": "tsup src/**/*.ts* --format esm,cjs --dts --watch --external react",
+    "build": "tsup src/**/*.ts* --format esm,cjs --dts --external react",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
