@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box } from '@stamblew/react'
+import { Box, Text } from '@stamblew/react'
 
 export default {
   title: 'Surface/Box',
   component: Box,
   args: {
-    children: <>Hello World</>,
+    children: <Text>Hello World</Text>,
   },
 } satisfies Meta<typeof Box>
 
