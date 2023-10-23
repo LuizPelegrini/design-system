@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react'
+import { ElementType, FC, PropsWithChildren } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const text = tv({
@@ -25,8 +25,10 @@ const text = tv({
   },
 })
 
-type TextProps = PropsWithChildren<VariantProps<typeof text>>
+type TextProps = PropsWithChildren<VariantProps<typeof text>> & {
+  as?: ElementType
+}
 
-export const Text: FC<TextProps> = ({ size, children }) => {
-  return <p className={text({ size })}>{children}</p>
+export const Text: FC<TextProps> = ({ size, children, as: Tag = 'p' }) => {
+  return <Tag className={text({ size })}>{children}</Tag>
 }

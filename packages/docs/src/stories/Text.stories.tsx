@@ -14,3 +14,9 @@ type TextStory = StoryObj<typeof Text>
 export const primary: TextStory = {
   args: {},
 }
+
+export const customTag: TextStory = {
+  args: {
+    as: 'strong',
+  },
+}
