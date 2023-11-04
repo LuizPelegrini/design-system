@@ -1,4 +1,10 @@
-import { ElementType, FC, PropsWithChildren } from 'react'
+import {
+  ComponentPropsWithoutRef,
+  ElementType,
+  FC,
+  PropsWithChildren,
+} from 'react'
+import { twMerge } from 'tailwind-merge'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const text = tv({
@@ -25,10 +31,22 @@ const text = tv({
   },
 })
 
-type TextProps = PropsWithChildren<VariantProps<typeof text>> & {
+type TextProps = PropsWithChildren<
+  VariantProps<typeof text> & ComponentPropsWithoutRef<'p'>
+> & {
   as?: ElementType
 }
 
-export const Text: FC<TextProps> = ({ size, children, as: Tag = 'p' }) => {
-  return <Tag className={text({ size })}>{children}</Tag>
+export const Text: FC<TextProps> = ({
+  size,
+  children,
+  as: Tag = 'p',
+  className,
+  ...rest
+}) => {
+  return (
+    <Tag className={twMerge(text({ size }), className)} {...rest}>
+      {children}
+    </Tag>
+  )
 }
