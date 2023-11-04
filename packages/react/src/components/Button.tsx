@@ -1,10 +1,4 @@
-import {
-  ComponentProps,
-  ComponentPropsWithoutRef,
-  ElementType,
-  FC,
-  PropsWithChildren,
-} from 'react'
+import { ComponentPropsWithoutRef, FC, PropsWithChildren } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const button = tv({
