@@ -8,6 +8,11 @@ export default {
     currentStep: 1,
     totalSteps: 3,
   },
+  argTypes: {
+    totalSteps: {
+      control: { type: 'number', min: 1, max: 30, step: 2 },
+    },
+  },
   decorators: [
     (Story) => (
       <Box>

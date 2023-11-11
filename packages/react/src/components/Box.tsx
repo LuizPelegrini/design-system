@@ -1,6 +1,6 @@
-import { ComponentProps, FC, PropsWithChildren } from 'react'
+import { ComponentPropsWithoutRef, FC, PropsWithChildren } from 'react'
 
-type BoxProps = PropsWithChildren<ComponentProps<'div'>>
+type BoxProps = PropsWithChildren<ComponentPropsWithoutRef<'div'>>
 
 export const Box: FC<BoxProps> = ({ children, ...rest }) => {
   return (

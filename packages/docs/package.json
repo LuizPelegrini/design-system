@@ -19,6 +19,7 @@
     "@stamblew/eslint-config": "*",
     "@stamblew/react": "*",
     "@stamblew/ts-config": "*",
+    "@storybook/addon-a11y": "^7.5.3",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",

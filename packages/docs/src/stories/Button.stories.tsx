@@ -8,16 +8,30 @@ export default {
   args: {
     children: 'Send',
     disabled: false,
+    variant: 'primary',
+    size: 'md',
+  },
+  argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: { type: 'inline-radio' },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: { type: 'inline-radio' },
+    },
+    onClick: {
+      action: 'click',
+    },
+    onMouseOver: {
+      action: 'hover',
+    },
   },
 } satisfies Meta<typeof Button>
 
 type ButtonStory = StoryObj<typeof Button>
 
-export const primary: ButtonStory = {
-  args: {
-    variant: 'primary',
-  },
-}
+export const primary: ButtonStory = {}
 
 export const secondary: ButtonStory = {
   args: {

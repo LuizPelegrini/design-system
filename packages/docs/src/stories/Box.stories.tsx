@@ -7,6 +7,11 @@ export default {
   args: {
     children: <Text>Hello World</Text>,
   },
+  argTypes: {
+    children: {
+      control: { type: null }, // disable control
+    },
+  },
 } satisfies Meta<typeof Box>
 
 type BoxStory = StoryObj<typeof Box>
