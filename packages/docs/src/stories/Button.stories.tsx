@@ -62,4 +62,9 @@ export const withIcon: ButtonStory = {
       </>
     ),
   },
+  argTypes: {
+    children: {
+      control: { disable: true },
+    },
+  },
 }

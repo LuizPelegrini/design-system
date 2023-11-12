@@ -1,6 +1,3 @@
 {
-  "extends": ["@stamblew-ignite-ui/eslint-config"],
-  "rules": {
-    "react/display-name": "off"
-  }
+  "extends": ["@stamblew-ignite-ui/eslint-config"]
 }

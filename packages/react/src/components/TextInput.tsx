@@ -37,3 +37,5 @@ export const TextInput: FC<TextInputProps> = forwardRef(
     )
   },
 )
+
+TextInput.displayName = 'TextInput'
