@@ -1,5 +1,5 @@
 {
-  "name": "@stamblew/docs",
+  "name": "@stamblew-ignite-ui/docs",
   "private": true,
   "version": "0.0.0",
   "license": "MIT",
@@ -17,9 +17,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@stamblew/eslint-config": "*",
-    "@stamblew/react": "*",
-    "@stamblew/ts-config": "*",
+    "@stamblew-ignite-ui/eslint-config": "*",
+    "@stamblew-ignite-ui/react": "*",
+    "@stamblew-ignite-ui/ts-config": "*",
     "@storybook/addon-a11y": "^7.5.3",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",

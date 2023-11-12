@@ -1,8 +1,7 @@
 {
-  "name": "@stamblew/eslint-config",
-  "version": "1.0.0",
+  "name": "@stamblew-ignite-ui/eslint-config",
+  "version": "1.1.1",
   "main": "./index.js",
-  "private": true,
   "license": "MIT",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",

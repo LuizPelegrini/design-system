@@ -1,6 +1,6 @@
 {
-  "name": "@stamblew/tokens",
-  "version": "1.0.0",
+  "name": "@stamblew-ignite-ui/tokens",
+  "version": "1.1.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,8 +12,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@stamblew/ts-config": "*",
-    "@stamblew/eslint-config": "*",
+    "@stamblew-ignite-ui/ts-config": "*",
+    "@stamblew-ignite-ui/eslint-config": "*",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   }

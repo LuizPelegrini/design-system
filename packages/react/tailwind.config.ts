@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { colors, fonts, fontSizes, radii } from '@stamblew/tokens'
+import { colors, fonts, fontSizes, radii } from '@stamblew-ignite-ui/tokens'
 
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],

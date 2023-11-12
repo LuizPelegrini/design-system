@@ -1,3 +1,3 @@
 {
-  "extends": ["@stamblew/eslint-config"]
+  "extends": ["@stamblew-ignite-ui/eslint-config"]
 }
