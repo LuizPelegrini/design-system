@@ -1,5 +1,11 @@
 # @stamblew-ignite-ui/tokens
 
+## 1.1.2
+
+### Patch Changes
+
+- Add new color token
+
 ## 1.1.1
 
 ### Patch Changes
