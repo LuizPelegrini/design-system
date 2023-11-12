@@ -1,4 +1,4 @@
-import { Box, Checkbox, Text } from '@stamblew/react'
+import { Box, Checkbox, Text } from '@stamblew-ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {

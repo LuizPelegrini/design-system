@@ -1,4 +1,4 @@
-import { colors } from '@stamblew/tokens'
+import { colors } from '@stamblew-ignite-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

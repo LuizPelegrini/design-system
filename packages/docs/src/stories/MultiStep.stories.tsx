@@ -1,4 +1,4 @@
-import { Box, MultiStep } from '@stamblew/react'
+import { Box, MultiStep } from '@stamblew-ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {

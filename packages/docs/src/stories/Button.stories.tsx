@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button } from '@stamblew/react'
+import { Button } from '@stamblew-ignite-ui/react'
 import { ArrowRight } from 'phosphor-react'
 
 export default {

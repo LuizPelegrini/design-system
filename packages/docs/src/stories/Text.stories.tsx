@@ -1,4 +1,4 @@
-import { Text } from '@stamblew/react'
+import { Text } from '@stamblew-ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {

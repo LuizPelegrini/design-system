@@ -1,4 +1,4 @@
-import { Avatar } from '@stamblew/react'
+import { Avatar } from '@stamblew-ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {

@@ -1,6 +1,6 @@
 import type { Preview } from "@storybook/react";
 import { themes } from '@storybook/theming'
-import '@stamblew/react/dist/index.css';
+import '@stamblew-ignite-ui/react/dist/index.css';
 
 const preview: Preview = {
   parameters: {

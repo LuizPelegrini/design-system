@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Box, Text } from '@stamblew/react'
+import { Box, Text } from '@stamblew-ignite-ui/react'
 
 export default {
   title: 'Surface/Box',
