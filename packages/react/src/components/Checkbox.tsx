@@ -7,7 +7,7 @@ type CheckboxProps = ComponentPropsWithoutRef<typeof RadixCheckbox.Root>
 export const Checkbox: FC<CheckboxProps> = (props) => {
   return (
     <RadixCheckbox.Root
-      className="w-6 h-6 bg-gray900 border-2 border-gray900 rounded-xs cursor-pointer overflow-hidden flex items-center justify-center leading-[0] focus:border-2 focus:border-ignite300 data-[state=checked]:bg-ignite300 disabled:cursor-not-allowed disabled:opacity-50"
+      className="w-6 h-6 bg-gray900 border-2 border-gray900 rounded-xs cursor-pointer overflow-hidden flex items-center justify-center leading-[0] focus:border-2 focus:border-ignite300 data-[state=checked]:bg-ignite300 data-[state=checked]:border-ignite300 disabled:cursor-not-allowed disabled:opacity-50"
       {...props}
     >
       <RadixCheckbox.Indicator

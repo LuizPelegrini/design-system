@@ -1,5 +1,12 @@
 # @stamblew-ignite-ui/react
 
+## 1.2.0
+
+### Minor Changes
+
+- - Minor styling fixes
+  - TextInput forwards ref to input element
+
 ## 1.1.1
 
 ### Patch Changes

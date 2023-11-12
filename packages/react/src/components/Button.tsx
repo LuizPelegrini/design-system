@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef, FC, PropsWithChildren } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const button = tv({
-  base: 'px-0 py-4 rounded-md text-sm font-medium font-default text-center min-w-[120px] flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed [&_svg]:w-4 [&_svg]:h-4',
+  base: 'px-0 py-4 rounded-md text-sm font-medium font-default text-center min-w-[120px] flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed focus:ring-2 focus:ring-gray100 [&_svg]:w-4 [&_svg]:h-4',
 
   variants: {
     variant: {

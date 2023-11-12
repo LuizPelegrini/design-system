@@ -4,7 +4,7 @@ type BoxProps = PropsWithChildren<ComponentPropsWithoutRef<'div'>>
 
 export const Box: FC<BoxProps> = ({ children, ...rest }) => {
   return (
-    <div className="p-4 rounded-md bg-gray800 border border-gray600" {...rest}>
+    <div className="p-6 rounded-md bg-gray800 border border-gray600" {...rest}>
       {children}
     </div>
   )

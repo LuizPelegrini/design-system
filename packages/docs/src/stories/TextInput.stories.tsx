@@ -6,6 +6,15 @@ export default {
   component: TextInput,
   args: {
     disabled: false,
+    innerSpace: 'md',
+  },
+  argTypes: {
+    innerSpace: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
   decorators: [
     (Story) => (
@@ -26,5 +35,6 @@ export const primary: TextInputStory = {}
 export const withPrefix: TextInputStory = {
   args: {
     prefix: 'https://',
+    placeholder: 'example.com',
   },
 }

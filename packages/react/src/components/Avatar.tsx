@@ -6,7 +6,7 @@ type AvatarProps = ComponentProps<typeof RadixAvatar.Image>
 
 export const Avatar: FC<AvatarProps> = (props) => {
   return (
-    <RadixAvatar.Root className="rounded-full inline-block w-12 h-12 overflow-hidden">
+    <RadixAvatar.Root className="rounded-full inline-block w-16 h-16 overflow-hidden">
       <RadixAvatar.Image className="w-full h-full object-cover" {...props} />
       <RadixAvatar.Fallback
         delayMs={600}
