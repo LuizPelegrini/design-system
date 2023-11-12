@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
 
       # Install dependencies (does not create .lock file) and install only production dependencies
       - name: Install Dependencies
