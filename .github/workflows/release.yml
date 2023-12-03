@@ -17,6 +17,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      # install pnpm in CI environment
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
