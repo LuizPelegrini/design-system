@@ -37,3 +37,8 @@ jobs:
         env:
           # To ensure that when this step runs, we authenticate 
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print URL
+        run: echo "$(gh api repos/${{ github.repository.owner }}/${{ github.repository }}/pages --jq '.html_url')"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
