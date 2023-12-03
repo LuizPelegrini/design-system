@@ -11,27 +11,29 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Setup Node.js
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
       # Install dependencies (does not create .lock file) and install only production dependencies
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
         
 
       - name: Publish to NPM
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: npm run release
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

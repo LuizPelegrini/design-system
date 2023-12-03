@@ -1,6 +1,6 @@
 {
   "name": "@stamblew-ignite-ui/react",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@stamblew-ignite-ui/eslint-config": "*",
-    "@stamblew-ignite-ui/tokens": "*",
-    "@stamblew-ignite-ui/ts-config": "*",
+    "@stamblew-ignite-ui/eslint-config": "workspace:*",
+    "@stamblew-ignite-ui/tokens": "workspace:*",
+    "@stamblew-ignite-ui/ts-config": "workspace:*",
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.10",
     "autoprefixer": "^10.4.16",

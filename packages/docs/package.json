@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
+    "start": "storybook start",
     "deploy-storybook": "storybook-to-ghpages",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
@@ -17,10 +18,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@stamblew-ignite-ui/eslint-config": "*",
-    "@stamblew-ignite-ui/react": "*",
-    "@stamblew-ignite-ui/ts-config": "*",
+    "@stamblew-ignite-ui/eslint-config": "workspace:*",
+    "@stamblew-ignite-ui/react": "workspace:*",
+    "@stamblew-ignite-ui/ts-config": "workspace:*",
+    "@stamblew-ignite-ui/tokens": "workspace:*",
     "@storybook/addon-a11y": "^7.5.3",
+    "@storybook/addon-docs": "^7.6.3",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
@@ -30,6 +33,7 @@
     "@storybook/react-vite": "^7.4.6",
     "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.2.2",
+    "@storybook/theming": "^7.6.3",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",

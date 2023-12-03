@@ -1,5 +1,11 @@
 # @stamblew-ignite-ui/react
 
+## 1.5.0
+
+### Minor Changes
+
+- Migrate npm to pnpm
+
 ## 1.4.0
 
 ### Minor Changes
