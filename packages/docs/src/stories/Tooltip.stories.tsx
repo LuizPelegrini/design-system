@@ -2,7 +2,7 @@ import { Box, Text, Tooltip } from '@stamblew-ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: 'Form/Tooltip',
+  title: 'Data Display/Tooltip',
   component: Tooltip,
   args: {
     label: 'Tooltip',

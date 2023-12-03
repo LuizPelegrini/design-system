@@ -11,8 +11,10 @@ const button = tv({
       secondary:
         'text-ignite300 border-2 border-ignite500 disabled:text-gray200 disabled:border-gray200 enabled:hover:bg-ignite500 enabled:hover:text-white ',
       tertiary: 'text-gray100 disabled:text-gray600 enabled:hover:text-white',
+      transparent: 'p-0 min-w-0 bg-transparent',
     },
     size: {
+      auto: 'h-auto',
       sm: 'h-9',
       md: 'h-12',
     },

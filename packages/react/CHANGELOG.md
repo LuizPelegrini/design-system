@@ -1,5 +1,11 @@
 # @stamblew-ignite-ui/react
 
+## 1.4.0
+
+### Minor Changes
+
+- New Toast component added
+
 ## 1.3.0
 
 ### Minor Changes
