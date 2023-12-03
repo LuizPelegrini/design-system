@@ -1,0 +1,3 @@
+import{j as t}from"./jsx-runtime-ffb262ed.js";import{h as a}from"./index-f0be1347.js";import{s as m}from"./chunk-D6TVT45T-4503f9d4.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";const d={title:"Surface/Box",component:m,args:{children:t.jsx(a,{children:"Hello World"})},argTypes:{children:{control:{type:null}}}},r={args:{}};var o,e,s;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(e=r.parameters)==null?void 0:e.docs)==null?void 0:s.source}}};const u=["primary"];export{u as __namedExportsOrder,d as default,r as primary};

@@ -1,0 +1,1 @@
+import{n as m,m as a,l as i}from"./index-f0be1347.js";import{j as n}from"./jsx-runtime-ffb262ed.js";var l=d=>{var r=d,{children:e}=r,o=m(r,["children"]);return n.jsx("div",a(i({className:"p-6 rounded-md bg-gray800 border border-gray600"},o),{children:e}))};export{l as s};
