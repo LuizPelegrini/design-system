@@ -41,10 +41,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        working-directory: ./packages/docs
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "./storybook-static"
+          path: "./packages/docs/storybook-static"
 
       - name: Deploy to GitHub Pages
         id: deployment
