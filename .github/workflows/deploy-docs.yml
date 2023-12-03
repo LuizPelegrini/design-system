@@ -37,16 +37,32 @@ jobs:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 
-      - name: Deploy storybook
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
         working-directory: ./packages/docs
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.0
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: storybook-static
-          build_command: pnpm build
-        # run: touch storybook-static/.nojekyll && pnpm deploy-storybook -- --ci --existing-output-dir=./storybook-static
+          path: "./storybook-static"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
         env:
           # To ensure that when this step runs, we authenticate 
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Deploy storybook
+      #   working-directory: ./packages/docs
+      #   uses: bitovi/github-actions-storybook-to-github-pages@v1.0.0
+      #   with:
+      #     path: storybook-static
+      #     build_command: pnpm build
+      #   # run: touch storybook-static/.nojekyll && pnpm deploy-storybook -- --ci --existing-output-dir=./storybook-static
+      #   env:
+      #     # To ensure that when this step runs, we authenticate 
+      #     GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
       - name: Print URL
         run: echo "$(gh api repos/${{ github.repository }}/pages --jq '.html_url')"
